@@ -24,6 +24,12 @@ body {
     padding: 20px;
 }
 
+/* ID Selector */
+#resume {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
 /* Header */
 .header {
     border-top: 1px solid var(--border-color);
@@ -87,6 +93,19 @@ body {
 .side-section a {
     color: var(--text-color);
     text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+/* Attribute Selector */
+a[href^="mailto:"] {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Pseudo-class Selector */
+a:hover {
+    text-decoration: underline;
+    color: #2b2b6f;
 }
 
 .skills-list {

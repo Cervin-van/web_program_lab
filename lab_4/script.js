@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Load comments
   let commentsContainer = document.getElementById("comments-container");
-  let variant = 23;
+  let variant = 8;
 
   fetch(`https://jsonplaceholder.typicode.com/posts/${variant}/comments`)
     .then((res) => res.json())

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,18 +10,18 @@
 
 <body>
     <div class="theme-switch-wrapper">
-        <label for="theme-toggle">Темна тема</label>
+        <label for="theme-toggle">Dark Theme</label>
         <input type="checkbox" id="theme-toggle">
     </div>
 
-    <!-- Модальне вікно для форми -->
+    <!-- Feedback Modal -->
     <div id="feedback-modal" class="modal" style="display: none;">
         <div class="modal-content">
             <span class="close" id="close-modal">&times;</span>
-            <h2>Зворотній зв'язок</h2>
+            <h2>Feedback Form</h2>
             <form action="https://formspree.io/f/xeelvoqe" method="POST">
                 <div class="form-group">
-                    <label for="name">Ім'я:</label>
+                    <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
                 </div>
                 <div class="form-group">
@@ -29,14 +29,14 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="phone">Номер телефону:</label>
+                    <label for="phone">Phone Number:</label>
                     <input type="tel" id="phone" name="phone" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Повідомлення:</label>
+                    <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
-                <button type="submit" class="submit-btn">Відправити</button>
+                <button type="submit" class="submit-btn">Submit</button>
             </form>
         </div>
     </div>
@@ -50,7 +50,7 @@
         <div class="content-wrapper">
             <aside class="sidebar">
                 <section class="section side-section">
-                    <h3 class="section-title">Контакти</h3>
+                    <h3 class="section-title">Contacts</h3>
                     <div class="section-content text-right">
                         <p>Kyiv, Ukraine</p>
                         <p>+380 12 345 6789</p>
@@ -60,7 +60,7 @@
                 </section>
 
                 <section class="section side-section">
-                    <h3 class="section-title">Освіта</h3>
+                    <h3 class="section-title">Education</h3>
                     <div class="section-content text-right">
                         <p><strong>National University</strong></p>
                         <p>Faculty of Computer Science</p>
@@ -70,48 +70,70 @@
                 </section>
 
                 <section class="section side-section">
-                    <h3 class="section-title">Навички</h3>
+                    <h3 class="section-title">Skills</h3>
                     <div class="section-content text-right">
                         <ul class="skills-list">
                             <li>HTML5 / CSS3</li>
-                            <li>JavaScript</li>
+                            <li>JavaScript (ES6+)</li>
                             <li>React.js</li>
                             <li>Python 3</li>
                             <li>Django</li>
-                            <li>Git</li>
+                            <li>Git & GitHub</li>
+                            <li>SQL / PostgreSQL</li>
                         </ul>
+                    </div>
+                </section>
+
+                <section class="section side-section">
+                    <h3 class="section-title">Languages</h3>
+                    <div class="section-content text-right">
+                        <p>Ukrainian - Native</p>
+                        <p>English - Upper-Intermediate</p>
                     </div>
                 </section>
             </aside>
 
             <main class="main-content">
                 <section class="section main-section">
-                    <h3 class="section-title">Про мене</h3>
+                    <h3 class="section-title">About Me</h3>
                     <div class="section-content">
-                        <p>Шукаю можливості для розвитку в ролі Junior Full-Stack розробника. Маю базові знання Python,
-                            Django, HTML, CSS та JavaScript. Швидко навчаюсь та люблю створювати веб-додатки.</p>
+                        <p>Looking for opportunities to grow as a Junior Full-Stack Developer. I have a solid foundation in Python, Django, HTML, CSS, and JavaScript. I am a fast learner and passionate about creating modern, user-friendly web applications, and constantly improving my problem-solving skills.</p>
                     </div>
                 </section>
 
                 <section class="section main-section">
-                    <h3 class="section-title">Досвід</h3>
+                    <h3 class="section-title">Experience</h3>
                     <div class="section-content">
                         <div class="job">
-                            <p class="date">СІЧЕНЬ 2024 – ТЕПЕРІШНІЙ ЧАС</p>
+                            <p class="date">JANUARY 2024 – PRESENT</p>
                             <p class="job-title"><strong>Junior Web Developer Trainee</strong> | Tech StartUp Inc.</p>
                             <ul>
-                                <li>Допомагав з розробкою RESTful API.</li>
-                                <li>Створював інтерфейси за допомогою React.js.</li>
+                                <li>Assisted in the development of RESTful APIs.</li>
+                                <li>Built responsive user interfaces using React.js and HTML/CSS.</li>
+                                <li>Participated in code reviews and agile meetings.</li>
                             </ul>
                         </div>
                     </div>
                 </section>
 
-                <!-- Коментарі з сервера -->
+                <section class="section main-section">
+                    <h3 class="section-title">Projects</h3>
+                    <div class="section-content">
+                        <div class="job">
+                            <p class="job-title"><strong>Personal Portfolio (Lab 4)</strong></p>
+                            <ul>
+                                <li>Developed a responsive CV webpage using HTML, CSS, and vanilla JavaScript.</li>
+                                <li>Implemented a dark mode toggle and dynamic comments fetching from a REST API.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Server Comments -->
                 <section class="section main-section" id="employer-comments-section">
-                    <h3 class="section-title">Відгуки</h3>
+                    <h3 class="section-title">Feedback / Comments</h3>
                     <div class="section-content" id="comments-container">
-                        <p>Завантаження відгуків...</p>
+                        <p>Loading feedback...</p>
                     </div>
                 </section>
 
@@ -119,7 +141,7 @@
         </div>
 
         <footer class="footer">
-            <h4>Дані про систему</h4>
+            <h4>System Information</h4>
             <div id="os-info"></div>
         </footer>
     </div>

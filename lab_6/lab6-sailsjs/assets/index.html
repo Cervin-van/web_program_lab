@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мій сайт — Контакти</title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <header>
+    <h1>Мій особистий сайт</h1>
+    <nav><a href="#contact">Контакти</a></nav>
+  </header>
+
+  <main class="container">
+    <section id="contact">
+      <h2>Зворотний зв'язок</h2>
+      <form id="contactForm" novalidate>
+        <label>Ім'я
+          <input name="name" required minlength="2" maxlength="100" autocomplete="name">
+        </label>
+        <label>Email
+          <input name="email" type="email" required maxlength="254" autocomplete="email">
+        </label>
+        <label>Тема
+          <input name="subject" required minlength="3" maxlength="200">
+        </label>
+        <label>Повідомлення
+          <textarea name="message" required minlength="5" maxlength="5000" rows="6"></textarea>
+        </label>
+        <button type="submit">Надіслати</button>
+        <p id="status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>&copy; 2026 Червінь І.Я., КБ-207</p></footer>
+
+  <script src="/js/contact.js"></script>
+</body>
+</html>

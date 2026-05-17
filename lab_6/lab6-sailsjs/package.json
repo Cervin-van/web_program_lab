@@ -1,0 +1,29 @@
+{
+  "name": "lab6-sailsjs",
+  "version": "1.0.0",
+  "description": "Lab 6 — Sails.js + Mailjet API + Cloudflare Tunnel",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "lift": "sails lift",
+    "tunnel": "cloudflared tunnel --url http://localhost:1337",
+    "lint": "./node_modules/eslint/bin/eslint.js . --max-warnings=0 --report-unused-disable-directives && echo 'Your .js files look good.'"
+  },
+  "dependencies": {
+    "@sailshq/lodash": "^3.10.6",
+    "dotenv": "^17.4.2",
+    "node-mailjet": "^6.0.11",
+    "sails": "^1.5.17",
+    "sails-hook-orm": "^4.0.3",
+    "sails-hook-sockets": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "5.16.0"
+  },
+  "author": "Червінь І.Я.",
+  "license": "ISC",
+  "engines": {
+    "node": "^24.14"
+  }
+}
